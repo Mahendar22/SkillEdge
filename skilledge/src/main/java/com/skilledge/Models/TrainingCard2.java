@@ -3,8 +3,8 @@ package com.skilledge.Models;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="TrainingCard3")
-public class TrainingCard3 {
+@Table(name="TrainingCard2")
+public class TrainingCard2 {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,18 +22,18 @@ public class TrainingCard3 {
 	public void setTrainingCardslist(String trainingCardslist) {
 		TrainingCardslist = trainingCardslist;
 	}
-	public TrainingCard3(long id, String trainingCardslist) {
+	public TrainingCard2(long id, String trainingCardslist) {
 		super();
 		Id = id;
 		TrainingCardslist = trainingCardslist;
 	}
-	public TrainingCard3() {
+	public TrainingCard2() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public String toString() {
-		return "TrainingCard3 [Id=" + Id + ", TrainingCardslist=" + TrainingCardslist + "]";
+		return "TrainingCard2 [Id=" + Id + ", TrainingCardslist=" + TrainingCardslist + "]";
 	}
 	
 	
